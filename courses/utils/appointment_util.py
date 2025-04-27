@@ -11,7 +11,6 @@ def book_appointment(**kwargs):
         appointment_date = kwargs.get("appointment_date")
         appointment = Appointment.objects.create(student=student, instructor=instructor, appointment_date=appointment_date)
         return appointment
-    
     except User.DoesNotExist:
         raise Http404("Instructor or student does not exist")
     except Exception as e:

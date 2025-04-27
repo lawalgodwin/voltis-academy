@@ -1,7 +1,6 @@
 import graphene
 
 from courses.models import Enrollment, User
-from courses.types.course_type import CourseType
 from courses.types.enrollment_type import EnrollmentType
 
 

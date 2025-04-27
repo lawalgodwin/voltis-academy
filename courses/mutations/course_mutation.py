@@ -36,7 +36,7 @@ class CourseUpdateMutation(SerializerMutation):
         serializer_class = CourseSerializer
         model_operations = ['update']
         lookup_field = 'course_id'
-    
+
     @classmethod
     def perform_mutate(cls, serializer, info):
         return super().perform_mutate(serializer, info)

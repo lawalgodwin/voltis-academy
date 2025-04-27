@@ -1,4 +1,4 @@
-from django.db import DatabaseError, IntegrityError
+from django.db import IntegrityError
 import graphene
 from graphql import GraphQLError
 from graphene_django.rest_framework.mutation import SerializerMutation

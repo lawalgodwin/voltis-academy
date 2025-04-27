@@ -1,8 +1,7 @@
 import graphene
 
-from courses.models import Course, Enrollment
+from courses.models import Course
 from courses.types.course_type import CourseType
-from courses.types.enrollment_type import EnrollmentType
 
 
 class CourseQuery(graphene.ObjectType):

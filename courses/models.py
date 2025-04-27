@@ -5,7 +5,6 @@ from courses.managers.user_manager import UserManager
 
 
 class User(AbstractBaseUser, PermissionsMixin):
-    
 
     class Role(models.TextChoices):
         MENTEE = "mentee",

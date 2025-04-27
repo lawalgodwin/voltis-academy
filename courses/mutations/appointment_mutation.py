@@ -13,9 +13,9 @@ class AppointmentMutation(graphene.Mutation):
         student_id = graphene.UUID(required=True)
         instructor_id = graphene.UUID(required=True)
         appointment_date = graphene.DateTime(required=True)
-    
+
     appointment = graphene.Field(AppointmentType)
-    
+
     @classmethod
     def mutate(cls, root, info, **kwargs):
         try:
@@ -32,7 +32,7 @@ class AppointmentUpdateMutation(SerializerMutation):
         serializer_class = AppointmentSerializer
         model_operations = ['update']
         lookup_field = 'appointment_id'
-    
+
     @classmethod
     def perform_mutate(cls, serializer, info):
         return super().perform_mutate(serializer, info)

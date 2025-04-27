@@ -12,7 +12,7 @@ class EnrollmentMutation(graphene.Mutation):
     class Arguments:
         course_id = graphene.UUID(required=True)
         student_id = graphene.UUID(required=True)
-    
+
     enrollment = graphene.Field(EnrollmentType)
 
     @classmethod
